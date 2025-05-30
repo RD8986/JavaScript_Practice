@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice 1</title>
+</head>
+
+<body>
+    <script>
+        // This code checks if a number is divisible by 4 or 6 and prints "Quad", "Hex", or "QuadHex" accordingly.
+
+        let startRange= prompt("Please enter the start of the range: ");
+        let endRange = prompt("Please enter the end of the range: ");
+        for (let i = parseInt(startRange); i <= parseInt(endRange); i++) {
+            if (i % 4 === 0 && i % 6 === 0) {
+                console.log("QuadHex");
+            } else if (i % 4 === 0) {
+                console.log("Quad");
+            } else if (i % 6 === 0) {
+                console.log("Hex");
+            } else {
+                console.log(i);
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice 2</title>
+</head>
+
+<body>
+    <script>
+        // Code give sum of prime numbers from startRange to endRange. 
+        function isPrime(num) {
+            if (num <= 1) return false;
+            for (let i = 2; i <= num / i; i++) {
+                if (num % i === 0) return false;
+            }
+            return true;
+        }
+
+        let startRange= prompt("Please enter the start of the range: ");
+        let endRange = prompt("Please enter the end of the range: ");
+        let sum = 0;
+        for (let i = parseInt(startRange); i <= parseInt(endRange); i++) {
+            if (isPrime(i)) {
+                sum+=i;
+            }
+        }
+        console.log("Sum of prime numbers is between ranges : " + sum); 
+    </script>
+</body>
+
+</html>
